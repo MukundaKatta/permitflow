@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "PermitFlow",
+    "slug": "permitflow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "permitflow",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#2563eb",
+          "sounds": ["./assets/notification-sound.wav"]
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.permitflow.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#2563eb"
+      },
+      "package": "com.permitflow.mobile"
+    }
+  }
+}
