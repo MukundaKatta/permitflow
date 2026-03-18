@@ -1,31 +1,41 @@
-# PermitFlow
+# permitflow
 
-> Every Permit, License, and Deadline — Handled by AI
+**Every permit, license, and deadline — handled by AI**
 
-## Overview
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-PermitFlow automates the complex world of business permits, licenses, and regulatory compliance. AI tracks deadlines, pre-fills applications, and ensures you never miss a renewal.
-
-## Key Features
-
-- **Permit Discovery** — AI identifies all permits your business needs by location and industry
-- **Application Auto-Fill** — Pre-populate permit applications from your business profile
-- **Deadline Tracking** — Never miss a renewal with smart reminders
-- **Document Management** — Centralized storage for all permits and licenses
-- **Compliance Dashboard** — Real-time view of your compliance status
-- **Multi-Jurisdiction** — Federal, state, county, and city permits
-
-## Tech Stack
-
-Python, FastAPI, Claude API, PostgreSQL, React, Celery
-
-## Getting Started
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/permitflow.git
-cd permitflow && pip install -e .
+npm install
 ```
 
----
+## Quick Start
+```typescript
+import { Permitflow } from "./permitflow";
+const instance = new Permitflow()
+const r = await instance.process({ input: 'test' })
+```
 
-**Mukunda Katta** · [Officethree Technologies](https://github.com/MukundaKatta/Office3) · 2026
+## CLI
+```bash
+npx tsx src/cli.ts status
+npx tsx src/cli.ts run --input "data"
+```
+
+## API
+| Method | Description |
+|--------|-------------|
+| `process()` | Process |
+| `analyze()` | Analyze |
+| `transform()` | Transform |
+| `validate()` | Validate |
+| `export()` | Export |
+| `get_stats()` | Get stats |
+
+## Test
+```bash
+npx vitest
+```
+
+## License
+(c) 2026 Officethree Technologies. All Rights Reserved.
